@@ -1,0 +1,184 @@
+/* ===== VARIÁVEIS GLOBAIS ===== */
+:root {
+  --verde-esmeralda: #1a8a6f;
+  --verde-escuro: #0d5c48;
+  --areia-quente: #fdf3e3;
+  --amarelo-sol: #f0a500;
+  --branco: #ffffff;
+  --cinza-texto: #3d3d3d;
+}
+
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: var(--amarelo-sol);
+  color: var(--cinza-texto);
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: var(--verde-esmeralda);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* O logo aqui é um link — precisamos remover a decoração padrão de âncora */
+.logo {
+  text-decoration: none;
+}
+
+header h1 {
+  color: var(--branco);
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+header h1 span {
+  color: var(--amarelo-sol);
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--amarelo-sol);
+}
+
+/* ===== BANNER DA PÁGINA ===== */
+.banner {
+  background-color: var(--verde-escuro);
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--branco);
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #c8e6de;
+}
+
+/* ===== QUEM SOMOS ===== */
+.quem-somos {
+  background-color: var(--amarelo-sol);
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.bloco-texto {
+  max-width: 460px;
+}
+
+.bloco-texto h3 {
+  font-size: 26px;
+  color: var(--verde-escuro);
+  margin-bottom: 14px;
+}
+
+.bloco-texto p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--verde-esmeralda);
+  margin-bottom: 10px;
+}
+
+
+
+/* ===== NOSSOS DESTINOS ===== */
+.destinos {
+  background-color: var(--verde-escuro);
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--branco);
+}
+
+.destinos h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.destinos .subtitulo {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #aac4dc;
+  margin-bottom: 36px;
+}
+
+.destinos-lista {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.destino-item {
+  background-color: #148663;
+  border-radius: 8px;
+  width: 250px;
+  padding: 30px 22px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.destino-item:hover {
+  transform: translateY(-4px);
+}
+
+.destino-item .icone {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.destino-item h3 {
+  font-size: 18px;
+  color: var(--amarelo-sol);
+  margin-bottom: 10px;
+}
+
+.destino-item p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #cde0f0;
+  line-height: 1.5;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: var(--verde-escuro);
+  color: #aac4dc;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+footer span {
+  color: var(--amarelo-sol);
+}

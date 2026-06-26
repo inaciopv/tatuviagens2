@@ -1,0 +1,200 @@
+/* ===== VARIÁVEIS GLOBAIS ===== */
+:root {
+  --verde-esmeralda: #1a8a6f;
+  --verde-escuro: #0d5c48;
+  --areia-quente: #fdf3e3;
+  --amarelo-sol: #f0a500;
+  --branco: #ffffff;
+  --cinza-texto: #3d3d3d;
+}
+
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: var(--amarelo-sol);
+  color: var(--cinza-texto);
+}
+
+/* ===== CABEÇALHO — sem nav, apenas logo ===== */
+header {
+  background-color: var(--verde-esmeralda);
+  padding: 20px 40px;
+  text-align: center; /* centralizado porque não tem nav para equilibrar */
+}
+
+header h1 {
+  color: var(--branco);
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+header h1 span {
+  color: var(--amarelo-sol);
+}
+header a{
+   margin-top: 5px;
+  padding: 2px;
+  background-color: var(--amarelo-sol);
+  color: var(--branco);
+  border: none; /* remove a borda padrão de botão */
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; /* muda o cursor para "mãozinha" ao passar em cima */
+  transition: background-color 0.2s ease;
+}
+
+/* ===== BANNER DA PROMO ===== */
+.banner-promo {
+  background-color: var(--verde-escuro);
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--branco);
+}
+
+/* Badge de "oferta especial" */
+.badge {
+  display: inline-block;
+  background-color: var(--amarelo-sol);
+  color: var(--verde-escuro);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.banner-promo h2 {
+  font-size: 34px;
+  margin-bottom: 14px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3;
+}
+
+.banner-promo p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #c8e6de;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== SEÇÃO DO FORMULÁRIO ===== */
+.formulario-section {
+  background-color: var(--amarelo-sol);
+  padding: 70px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* O formulário em si — cartão centralizado */
+.form-promo {
+  background-color: var(--branco);
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--verde-escuro);
+    font-size: 16px;
+}
+select option {
+  color: var(--amarelo-sol)
+}
+
+  /* Coluna: todos os elementos empilhados verticalmente */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-promo h3 {
+  font-size: 22px;
+  color: var(--verde-escuro);
+  margin-bottom: 2px;
+}
+
+.form-subtitulo {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+/* ESTILOS DOS LABELS — o texto que fica acima de cada campo */
+.form-promo label {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--cinza-texto);
+  margin-top: 4px;
+}
+
+/* ESTILOS DOS INPUTS — os campos de texto */
+.form-promo input {
+  padding: 12px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: var(--cinza-texto);
+  outline: none; /* remove o contorno azul padrão do browser */
+  transition: border-color 0.2s ease;
+}
+
+/* Quando o campo está em foco (usuário clicou para digitar) */
+.form-promo input:focus {
+  border-color: var(--verde-esmeralda);
+}
+
+/* BOTÃO DE ENVIO */
+.form-promo button {
+  margin-top: 8px;
+  padding: 14px;
+  background-color: var(--amarelo-sol);
+  color: var(--branco);
+  border: none; /* remove a borda padrão de botão */
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; /* muda o cursor para "mãozinha" ao passar em cima */
+  transition: background-color 0.2s ease;
+}
+
+.form-promo button:hover {
+  background-color: #c96b28;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: var(--verde-escuro);
+  color: #aac4dc;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+footer span {
+  color: var(--amarelo-sol);
+}

@@ -1,0 +1,206 @@
+/* ===== VARIÁVEIS GLOBAIS ===== */
+/* Mesma identidade visual do Tatu Viagens original */
+:root {
+  --verde-esmeralda: #1a8a6f;
+  --verde-escuro: #0d5c48;
+  --areia-quente: #fdf3e3;
+  --amarelo-sol: #f0a500;
+  --branco: #ffffff;
+  --cinza-texto: #3d3d3d;
+}
+
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: var(--amarelo-sol);
+  color: var(--cinza-texto);
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: var(--verde-esmeralda);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  color: var(--branco);
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+header h1 span {
+  color: var(--amarelo-sol);
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+
+  /* NOVO CONCEITO: transition
+   * Sem transition, a cor muda instantaneamente no hover.
+   * Com transition, ela anima suavemente em 0.2 segundos.
+   * Sintaxe: transition: qual-propriedade duração timing;
+   * O timing "ease" começa rápido e desacelera no final. */
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--amarelo-sol);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background-color: var(--verde-escuro);
+  padding: 80px 40px;
+  text-align: center;
+  color: var(--branco);
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 17px;
+  max-width: 560px;
+  margin: 0 auto 32px auto;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #c8e6de;
+}
+
+/* Container dos dois botões lado a lado */
+.hero-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Botão principal — preenchido */
+.btn-primario {
+  background-color: var(--amarelo-sol);
+  color: var(--branco);
+  padding: 12px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.2s ease; /* transição suave no hover */
+}
+
+.btn-primario:hover {
+  background-color: #f9e61c;
+}
+
+/* Botão secundário — apenas contorno (outline) */
+.btn-secundario {
+  background-color: transparent;
+  color: var(--branco);
+  padding: 12px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  border: 2px solid var(--branco);
+  /* Anima tanto o fundo quanto a cor do texto ao mesmo tempo */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secundario:hover {
+  background-color: var(--branco);
+  color: var(--verde-escuro);
+}
+
+/* ===== DESTAQUES ===== */
+.destaques {
+  background-color: var(--amarelo-sol);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.destaques h2 {
+  font-size: 28px;
+  color: var(--verde-escuro);
+  margin-bottom: 8px;
+}
+
+.destaques .subtitulo {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 36px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--branco);
+  border-radius: 8px;
+  width: 240px;
+  padding: 28px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  /* Transition em múltiplas propriedades: sombra e movimento vertical */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  /* transform: translateY() move o elemento no eixo Y (vertical).
+   * Valor negativo = sobe. -4px = sobe 4 pixels. */
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+}
+
+.card .icone {
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: var(--verde-escuro);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: var(--verde-escuro);
+  color: #aac4dc;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+footer span {
+  color: var(--amarelo-sol);
+}

@@ -1,0 +1,158 @@
+/* ===== VARIÁVEIS GLOBAIS ===== */
+:root {
+  --verde-esmeralda: #1a8a6f;
+  --verde-escuro: #0d5c48;
+  --areia-quente: #fdf3e3;
+  --amarelo-sol: #f0a500;
+  --branco: #ffffff;
+  --cinza-texto: #3d3d3d;
+}
+
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: var(--amarelo-sol);
+  color: var(--cinza-texto);
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: var(--verde-esmeralda);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+header h1 {
+  color: var(--branco);
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+header h1 span {
+  color: var(--amarelo-sol);
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--amarelo-sol);
+}
+
+/* ===== BANNER DA PÁGINA ===== */
+.banner {
+  background-color: var(--verde-escuro);
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--branco);
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #c8e6de;
+}
+
+/* ===== CANAIS DE CONTATO ===== */
+.contato {
+  background-color: var(--amarelo-sol);
+  padding: 70px 40px;
+}
+
+/* Dois cartões lado a lado */
+.contato-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.canal {
+  background-color: var(--branco);
+  border-radius: 8px;
+  padding: 40px 36px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.canal:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.canal .icone img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.canal h3 {
+  font-size: 20px;
+  color: var(--verde-escuro);
+  margin-bottom: 8px;
+}
+
+.canal p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-canal {
+  display: inline-block;
+  background-color: var(--verde-esmeralda);
+  color: var(--branco);
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-canal:hover {
+  background-color: var(--verde-escuro);
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: var(--verde-escuro);
+  color: #aac4dc;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+footer span {
+  color: var(--amarelo-sol);
+}
